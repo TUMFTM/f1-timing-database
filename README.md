@@ -80,7 +80,7 @@ The data is available for the seasons 2014 - 2019.
 | pitstoptime | real |  |
 | nextcompound | text |  |
 | fcyphasetype | text |  |
-| fcyphaseage | text |  |
+| fcyphaseage | integer |  |
 
 ### qualifyings table
 | Field | Type | Key |
