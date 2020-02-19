@@ -19,9 +19,10 @@ The following data was added in comparison to the Ergast database:
 * accidents and failures (per driver, season)
 * engine manufacturers (per race)
 * comments (per race)
+* track lengths (per race)
 
 The following data was made directly accessible in comparison to the Ergast database:
-* gaps and intervals (per lap)
+* race time, gaps and intervals (per lap)
 * number of driven laps (per race)
 * finishing status (i.e. finished or disqualified or did not finish) (per race)
 
@@ -48,6 +49,9 @@ The database contains the following tables:
 
 The data is available for the seasons 2014 - 2019.
 
+Hint: Progress in the `fcyphases` and `laps` tables are calculated based on time, not on distance. Therefore, 0.8 means
+that the phase started/ended at 80% of the final lap time, not at 80% of the track length (since this data is not available).
+
 ### drivers table
 | Field | Type | Key |
 |---|---|---|
@@ -57,12 +61,17 @@ The data is available for the seasons 2014 - 2019.
 | name | text |  |
 
 ### fcyphases table
-| Field | Type | Key |
-|---|---|---|
-| race_id | integer | primary, foreign |
-| startlap | integer | primary |
-| endlap | integer |  |
-| type | text |  |
+| Field | Type | Key | Comment |
+|---|---|---|---|
+| id | integer | primary |  |
+| race_id | integer | foreign |  |
+| startracetime | real |  |  |
+| endracetime | real |  |  |
+| startraceprog | real |  | race progress of leader at phase start |
+| endraceprog | real |  | race progress of leader at phase end |
+| startlap | integer |  |  |
+| endlap | integer |  |  |
+| type | text |  | VSC or SC |
 
 ### laps table
 | Field | Type | Key |
@@ -72,6 +81,7 @@ The data is available for the seasons 2014 - 2019.
 | position | integer | primary |
 | driver_id | integer | foreign |
 | laptime | real |  |
+| racetime | real |  |
 | gap | real | |
 | interval | real |  |
 | compound | text |  |
@@ -79,8 +89,12 @@ The data is available for the seasons 2014 - 2019.
 | pitintime | text |  |
 | pitstoptime | real |  |
 | nextcompound | text |  |
-| fcyphasetype | text |  |
-| fcyphaseage | integer |  |
+| startlapprog_vsc | real |  |
+| endlapprog_vsc | real |  |
+| age_vsc | real |  |
+| startlapprog_sc | real |  |
+| endlapprog_sc | real |  |
+| age_sc | real |  |
 
 ### qualifyings table
 | Field | Type | Key |
@@ -102,6 +116,7 @@ The data is available for the seasons 2014 - 2019.
 | comment | text |  |
 | nolaps | integer |  |
 | nolapsplanned | integer |  |
+| tracklength | real |  |
 
 ### retirements table
 | Field | Type | Key |
