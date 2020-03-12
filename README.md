@@ -135,3 +135,5 @@ that the phase started/ended at 80% of the final lap time, not at 80% of the tra
 | enginemanufacturer | text |  |
 | gridposition | integer |  |
 | status | text |  |
+| resultposition | integer |  |
+| completedlaps | integer |  |
