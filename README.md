@@ -105,6 +105,7 @@ that the phase started/ended at 80% of the final lap time, not at 80% of the tra
 | q1time | real |  |
 | q2time | real |  |
 | q3time | real |  |
+| speedtrap | real |  |
 
 ### races table
 | Field | Type | Key |
@@ -137,3 +138,4 @@ that the phase started/ended at 80% of the final lap time, not at 80% of the tra
 | status | text |  |
 | resultposition | integer |  |
 | completedlaps | integer |  |
+| speedtrap | real |  |
