@@ -112,6 +112,7 @@ that the phase started/ended at 80% of the final lap time, not at 80% of the tra
 |---|---|---|
 | id | integer | primary |
 | date | text |  |
+| season | integer |  |
 | location | text |  |
 | availablecompounds | text |  |
 | comment | text |  |
@@ -133,6 +134,7 @@ that the phase started/ended at 80% of the final lap time, not at 80% of the tra
 | race_id | integer | primary, foreign |
 | driver_id | integer | primary, foreign |
 | team | text |  |
+| teamcolor | text |  |
 | enginemanufacturer | text |  |
 | gridposition | integer |  |
 | status | text |  |
