@@ -50,7 +50,13 @@ The database contains the following tables:
 The data is available for the seasons 2014 - 2019.
 
 Hint: Progress in the `fcyphases` and `laps` tables are calculated based on time, not on distance. Therefore, 0.8 means
-that the phase started/ended at 80% of the final lap time, not at 80% of the track length (since this data is not available).
+that the phase started/ended at 80% of the final lap time, not at 80% of the track length (since this data is not
+available).
+Hint 2: The tire age for drivers starting in the top 10 is set to 2 laps by default (if they do not start on wet or
+intermediate compound). This is made to take into account that these drivers have to start on the same tireset on which
+they set their fastest lap time in Q2. The two laps are an approximation of the degradation relevant tire age (the real
+tire age is three laps, at least, since there is usually one warm-up lap, one or two hot laps and one cool-down lap on
+these tires).
 
 ### drivers table
 | Field | Type | Key |
