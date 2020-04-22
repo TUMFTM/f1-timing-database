@@ -1,7 +1,7 @@
 # Introduction
 This repository hosts a SQLite database containing Formula 1 lap and race information for the seasons 2014 - 2019
-(i.e. the Formula 1 hybrid era). It was built mainly on the basis of the Ergast API (see Attribution) to be able to
-determine parameters for a race simulation (soon available on https://github.com/TUMFTM/race_strategy_tools). We are
+(i.e. the Formula 1 hybrid era). It was built mainly on the basis of the Ergast API (see Attribution section) to be able to
+determine parameters for a race simulation (soon available on https://github.com/TUMFTM/race-simulation). We are
 open for comments, suggestions and bug reports!
 
 Contact person: [Alexander Heilmeier](mailto:alexander.heilmeier@tum.de).
@@ -52,6 +52,7 @@ The data is available for the seasons 2014 - 2019.
 Hint: Progress in the `fcyphases` and `laps` tables are calculated based on time, not on distance. Therefore, 0.8 means
 that the phase started/ended at 80% of the final lap time, not at 80% of the track length (since this data is not
 available).
+
 Hint 2: The tire age for drivers starting in the top 10 is set to 2 laps by default (if they do not start on wet or
 intermediate compound). This is made to take into account that these drivers have to start on the same tireset on which
 they set their fastest lap time in Q2. The two laps are an approximation of the degradation relevant tire age (the real
