@@ -148,3 +148,8 @@ these tires).
 | resultposition | integer |  |
 | completedlaps | integer |  |
 | speedtrap | real |  |
+
+# Related open-source repositories
+* Lap time simulation: https://github.com/TUMFTM/laptime-simulation
+* Race simulation: https://github.com/TUMFTM/race-simulation
+* Race track database: https://github.com/TUMFTM/racetrack-database
