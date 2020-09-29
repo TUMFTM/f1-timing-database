@@ -59,6 +59,18 @@ they set their fastest lap time in Q2. The two laps are an approximation of the 
 tire age is three laps, at least, since there is usually one warm-up lap, one or two hot laps and one cool-down lap on
 these tires).
 
+Hint 3: All compounds are given in absolute compound names (A1 - A7) so that they can be compared over all seasons. The
+following table contains which compound names of a season correspond to which absolute compound names.
+
+| Season | A1 | A2 | A3 | A4 | A5 | A6 | A7 |
+|---|---|---|---|---|---|---|---|
+| 2014 | hard | medium | soft | supersoft | - | - | - |
+| 2015 | hard | medium | soft | supersoft | - | - | - |
+| 2016 | hard | medium | soft | supersoft | ultrasoft | - | - |
+| 2017 | hard | medium | soft | supersoft | ultrasoft | - | - |
+| 2018 | superhard | hard | medium | soft | supersoft | ultrasoft | hypersoft |
+| 2019 | - | C1 | C2 | C3 | - | C4 | C5 |
+
 ### drivers table
 | Field | Type | Key |
 |---|---|---|
