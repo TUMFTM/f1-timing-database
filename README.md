@@ -106,7 +106,7 @@ following table contains which compound names of a season correspond to which ab
 | compound | text |  |
 | tireage | integer |  |
 | pitintime | text |  |
-| pitstoptime | real |  |
+| pitstopduration | real |  |
 | nextcompound | text |  |
 | startlapprog_vsc | real |  |
 | endlapprog_vsc | real |  |
@@ -121,9 +121,9 @@ following table contains which compound names of a season correspond to which ab
 | race_id | integer | primary, foreign |
 | position | integer | primary |
 | driver_id | integer | foreign |
-| q1time | real |  |
-| q2time | real |  |
-| q3time | real |  |
+| q1laptime | real |  |
+| q2laptime | real |  |
+| q3laptime | real |  |
 | speedtrap | real |  |
 
 ### races table
