@@ -1,8 +1,8 @@
 # Introduction
-This repository hosts a SQLite database containing Formula 1 lap and race information for the seasons 2014 - 2019
-(i.e. the Formula 1 hybrid era). It was built mainly on the basis of the Ergast API (see Attribution section) to be able to
-determine parameters for a race simulation (soon available on https://github.com/TUMFTM/race-simulation). We are
-open for comments, suggestions and bug reports!
+This repository hosts a SQLite database containing Formula 1 lap and race information for the seasons from 2014 to 2019
+(i.e. the Formula 1 hybrid era with V6 engines). It was built mainly on the basis of the Ergast API (see
+Attribution section) to be able to determine parameters for a race simulation (soon available on
+https://github.com/TUMFTM/race-simulation). We are open for comments, suggestions and bug reports!
 
 Contact person: [Alexander Heilmeier](mailto:alexander.heilmeier@tum.de).
 
