@@ -163,5 +163,6 @@ following table contains which compound names of a season correspond to which ab
 
 # Related open-source repositories
 * Lap time simulation: https://github.com/TUMFTM/laptime-simulation
-* Race simulation: https://github.com/TUMFTM/race-simulation
+* Lap-discrete race simulation: https://github.com/TUMFTM/race-simulation
+* Time-discrete race simulator: https://github.com/heilmeiera/time-discrete-race-simulator
 * Race track database: https://github.com/TUMFTM/racetrack-database
